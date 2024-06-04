@@ -22,7 +22,7 @@ export default class Cartao extends Component{
     return h`
 <div class="col-sm col-md-8 col-lg-6 col-xxl-4 mb-3">
   <div class="card rounded-4 blur fadeinout ${oculto}">
-    <div class="d-flex"><button onClick=${ocultar} type="button" class="btn btn-dark ms-auto rounded-3"><i class="bi bi-dash-lg"></i></button></div>
+    <div class="d-flex"><button onClick=${ocultar} type="button" class="btn btn-dark bg-transparent border-0 ms-auto rounded-3"><i class="bi bi-dash-lg"></i></button></div>
     <div class="card-body">${props.children}</div>
   </div>
 </div>

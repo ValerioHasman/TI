@@ -35,7 +35,7 @@ function listarEm(estado) {
     .then((res) => {
       let lista = [];
       res.forEach(element => {
-        lista.push(h`<tr><td>${element.servico}</td><td class="text-end">${element.preco}</td></tr>`);
+        lista.push(h`<tr><td>${element.servico}</td><td class="text-end text-normal font-monospace">${element.preco}</td></tr>`);
       });
       estado(lista);
     })

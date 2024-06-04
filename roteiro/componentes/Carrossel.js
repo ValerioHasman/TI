@@ -27,7 +27,7 @@ export default class Carrossel extends Component {
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselDeImagens" data-bs-slide="prev">
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselDeImagens" data-bs-slide="next">
+  <button class="carousel-control-next h-75 mt-auto" type="button" data-bs-target="#carouselDeImagens" data-bs-slide="next">
     <span class="visually-hidden">Next</span>
   </button>
 </div>

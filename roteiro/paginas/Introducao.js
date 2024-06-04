@@ -6,6 +6,7 @@ export default class Introducao extends Component{
   render(){
     return h`
 <${Cartao}>
+  <h1 class="card-title">Valério 🖥️</h1>
   <h2 class="card-title">Técnico em Informática</h2>
   <ul>
     <li>Aulas de Informática;</li>
@@ -15,7 +16,7 @@ export default class Introducao extends Component{
     <li>Limpezas de PCs e upgrades;</li>
     <li>Remoção de vírus;</li>
   </ul>
-  <button type="button" data-bs-target="#carouselDeImagens" data-bs-slide-to="0" aria-label="Slide 2" class="btn btn-secondary bg-gradient">Ver tabela de Preços<i class="bi ms-2 bi-table"></i></button>
+  <button type="button" data-bs-target="#carouselDeImagens" data-bs-slide-to="0" aria-label="Slide 1" class="btn btn-info bg-gradient rounded-5 px-3">Tabela de Preços<i class="bi ms-2 bi-table"></i></button>
 <//>
 `
   }

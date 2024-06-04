@@ -5,9 +5,9 @@ import h from "HTMLPreact";
 /** @implements {ShareData} */
 class Compartilhavel {
   get title() { return "Valério T.I."; }
-  get text() { return "Informática e Tecnologia"; }
+  get text() { return "Informática & Tecnologia"; }
   get url() { return location.origin + location.pathname; }
-  toString() { return this.title + "\n" + this.text + "\n" + this.url; }
+  toString() { return this.title + "\n" + this.text + "\n" + this.url + "\n"; }
 }
 
 
@@ -17,18 +17,24 @@ export default class Contatar extends Component {
   render() {
     const [icone, setIcone] = useState("bi-share");
 
-    function compartilhar() {
+    function compartilhar(event) {
+      event.preventDefault();
       if (navigator.share) {
         navigator.share(Contatar.conteudoCompartilhar)
           .catch((err) => {
-            location.reload(true);
+            copiar();
           });
       } else {
-        navigator.clipboard.writeText(Contatar.conteudoCompartilhar);
-        setIcone("bi-copy");
-        setTimeout(() => { setIcone("bi-share"); }, 1600);
+        copiar();
       }
     }
+
+    function copiar(){
+      navigator.clipboard.writeText(Contatar.conteudoCompartilhar);
+      setIcone("bi-copy");
+      setTimeout(() => { setIcone("bi-share"); }, 1600);
+    }
+
     return h`
 <div class="container-fluid fixed-bottom py-2 blur">
   <div class="fs-1 row text-center">

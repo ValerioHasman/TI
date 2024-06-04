@@ -8,6 +8,7 @@ import ZorinOS from '../paginas/ZorinOS.js';
 import AplicativosInstalados from '../paginas/AplicativosInstalados.js';
 import LimpezaEUpgrade from '../paginas/LimpezaEUpgrade.js';
 import ReinstalarStockRom from '../paginas/ReinstalarStockRom.js';
+import AulasDeInformatica from '../paginas/AulasDeInformatica.js';
 
 export default class Carrossel extends Component {
   render() {
@@ -16,10 +17,11 @@ export default class Carrossel extends Component {
   <div class="carousel-inner">
     <${ItemCarrossel} src="./midias/banner/preco.png"><${Precos} /><//>
     <${ItemCarrossel} src="./midias/banner/inicio.png" tempo="3000" active><${Introducao} /><//>
-    <${ItemCarrossel} src="./midias/banner/Win11.png"><${FormatarWin11} /><//>
+    <${ItemCarrossel} src="./midias/banner/win11.png"><${FormatarWin11} /><//>
     <${ItemCarrossel} src="./midias/banner/ZorinOS.png"><${ZorinOS} /><//>
     <${ItemCarrossel} src="./midias/banner/appsinstalados.png"><${AplicativosInstalados} /><//>
     <${ItemCarrossel} src="./midias/banner/appparou.png"><${ReinstalarStockRom} /><//>
+    <${ItemCarrossel} src="./midias/banner/aulas.png"><${AulasDeInformatica} /><//>
     <${ItemCarrossel} src="./midias/banner/limpeza.png"><${LimpezaEUpgrade} /><//>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselDeImagens" data-bs-slide="prev">

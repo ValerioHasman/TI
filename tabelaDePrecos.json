@@ -25,6 +25,10 @@
   },
   {
     "servico": "Remoção de vírus",
-    "preco": 30
+    "preco": 50
+  },
+  {
+    "servico": "Restauração e correção de pendrive corrompido e pirata",
+    "preco": 90
   }
 ]

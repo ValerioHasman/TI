@@ -1,0 +1,30 @@
+[
+  {
+    "servico": "Instalação de Windows 11",
+    "preco": 70
+  },
+  {
+    "servico": "Instalação de Zorin OS (Linux)",
+    "preco": 60
+  },
+  {
+    "servico": "Reinstalação de Stock Rom",
+    "preco": 60
+  },
+  {
+    "servico": "Instalações (apps, pacotes Offices) separado",
+    "preco": 10
+  },
+  {
+    "servico": "Aulas de Informática",
+    "preco": "5/h"
+  },
+  {
+    "servico": "Limpezas de PCs e upgrades",
+    "preco": 80
+  },
+  {
+    "servico": "Remoção de vírus",
+    "preco": 30
+  }
+]

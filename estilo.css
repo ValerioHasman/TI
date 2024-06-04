@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root,
+[data-bs-theme=light] {
+  --bg-links: rgba(36, 44, 91, 0.05);
+  --bg-links-hover: rgba(36, 44, 91, 0.1);
+  --bg-links-active: rgba(36, 44, 91, 0.15);
+  --bs-font-sans-serif: "Oxygen", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+[data-bs-theme=dark] {
+  --bg-links: rgba(255, 255, 255, 0.05);
+  --bg-links-hover: rgba(255, 255, 255, 0.1);
+  --bg-links-active: rgba(255, 255, 255, 0.15);
+}
+
+.blur {
+  backdrop-filter: blur(1rem);
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.bg-links {
+  color: #eeeeee;
+  transition: 0.15s ease-out all;
+  background-color: var(--bg-links);
+}
+
+.bg-links:hover {
+  transition: unset;
+  background-color: var(--bg-links-hover);
+}
+
+.bg-links:active {
+  transition: unset;
+  background-color: var(--bg-links-active);
+}
+
+.imagemAoFundo {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: 60s fundoAnimado ease-in-out infinite alternate;
+}
+
+@keyframes fundoAnimado {
+  0% {
+    background-position: bottom;
+  }
+  25% {
+    background-position: left;
+  }
+  50% {
+    background-position: top;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.telaInteira {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.table {
+  --bs-table-bg: unset !important;
+}

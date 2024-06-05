@@ -10,6 +10,22 @@ class Compartilhavel {
   toString() { return this.title + "\n" + this.text + "\n" + this.url + "\n"; }
 }
 
+function saudar() {
+  return encodeURIComponent(`Olá, Valério, ${(() => {
+      const hora = new Date().getHours();
+      if (hora < 5) {
+        return "boa noite 💤";
+      }
+      if (hora < 12) {
+        return "bom dia";
+      }
+      if (hora < 18) {
+        return "boa tarde";
+      }
+      return "boa noite";
+    })()
+    }.\n`);
+}
 
 export default class Contatar extends Component {
   static conteudoCompartilhar = new Compartilhavel();
@@ -29,10 +45,10 @@ export default class Contatar extends Component {
       }
     }
 
-    function copiar(){
+    function copiar() {
       navigator.clipboard.writeText(Contatar.conteudoCompartilhar);
       setIcone("bi-copy");
-      setTimeout(() => { setIcone("bi-share"); }, 1600);
+      setTimeout(() => { setIcone("bi-share"); }, 2400);
     }
 
     return h`
@@ -52,7 +68,7 @@ export default class Contatar extends Component {
     </div>
     <div class="col px-1">
       <a class="rounded-4 bg-links d-block"
-        href="https://wa.me/5512997329785?text=Ol%C3%A1%2C%20Val%C3%A9rio%0A" aria-label="WhatsApp" target="_blank">
+        href="https://wa.me/5512997329785?text=${saudar()}" aria-label="WhatsApp" target="_blank">
         <i class="bi bi-whatsapp"></i>
       </a>
     </div>

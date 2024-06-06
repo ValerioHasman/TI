@@ -80,3 +80,16 @@
   word-wrap: normal !important;
   word-break: normal !important;
 }
+
+.trocacornext {
+  animation: trocacornext 2s infinite alternate ease-in-out;
+}
+
+@keyframes trocacornext {
+  from {
+    filter: invert(0) grayscale(100);
+  }
+  to {
+    filter: invert(1) grayscale(100);
+  }
+}

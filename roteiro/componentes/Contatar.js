@@ -1,6 +1,7 @@
 import { Component } from 'preact';
 import { useState } from 'preact/hooks';
 import h from "HTMLPreact";
+import Saudacao from '../uteis/Saudacao.js';
 
 /** @implements {ShareData} */
 class Compartilhavel {
@@ -8,23 +9,6 @@ class Compartilhavel {
   get text() { return "Informática & Tecnologia"; }
   get url() { return location.origin + location.pathname; }
   toString() { return this.title + "\n" + this.text + "\n" + this.url + "\n"; }
-}
-
-function saudar() {
-  return encodeURIComponent(`Olá, Valério, ${(() => {
-      const hora = new Date().getHours();
-      if (hora < 5) {
-        return "boa noite 💤";
-      }
-      if (hora < 12) {
-        return "bom dia";
-      }
-      if (hora < 18) {
-        return "boa tarde";
-      }
-      return "boa noite";
-    })()
-    }.\n`);
 }
 
 export default class Contatar extends Component {
@@ -68,7 +52,7 @@ export default class Contatar extends Component {
     </div>
     <div class="col px-1">
       <a class="rounded-4 bg-links d-block"
-        href="https://wa.me/5512997329785?text=${saudar()}" aria-label="WhatsApp" target="_blank">
+        href="https://wa.me/5512997329785?text=${Saudacao.apresentarEmURI()}" aria-label="WhatsApp" target="_blank">
         <i class="bi bi-whatsapp"></i>
       </a>
     </div>

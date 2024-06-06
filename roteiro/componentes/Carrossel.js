@@ -28,6 +28,7 @@ export default class Carrossel extends Component {
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next h-75 mt-auto" type="button" data-bs-target="#carouselDeImagens" data-bs-slide="next">
+    <span class="carousel-control-next-icon mt-auto trocacornext" style="margin-bottom: calc((1.375rem + 1.5vw)* 3) !important;" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>

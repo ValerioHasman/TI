@@ -17,7 +17,7 @@ export default class Carrossel extends Component {
   <div class="carousel-inner">
     <${ItemCarrossel} src="./midias/banner/preco.png"><${Precos} /><//>
     <${ItemCarrossel} src="./midias/banner/inicio.png" tempo="3000" active><${Introducao} /><//>
-    <${ItemCarrossel} src="./midias/banner/win11.png"><${FormatarWin11} /><//>
+    <${ItemCarrossel} src="./midias/banner/win11.png" tempo="7000"><${FormatarWin11} /><//>
     <${ItemCarrossel} src="./midias/banner/ZorinOS.png"><${ZorinOS} /><//>
     <${ItemCarrossel} src="./midias/banner/appsinstalados.png"><${AplicativosInstalados} /><//>
     <${ItemCarrossel} src="./midias/banner/appparou.png"><${ReinstalarStockRom} /><//>

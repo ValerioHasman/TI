@@ -6,22 +6,22 @@
   --bg-links-hover: rgba(36, 44, 91, 0.1);
   --bg-links-active: rgba(36, 44, 91, 0.15);
   --bs-font-sans-serif: "Oxygen", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+  --bg-blur: rgba(255, 255, 255, 0.65);
 }
 
 [data-bs-theme=dark] {
   --bg-links: rgba(255, 255, 255, 0.05);
   --bg-links-hover: rgba(255, 255, 255, 0.1);
   --bg-links-active: rgba(255, 255, 255, 0.15);
+  --bg-blur: rgba(0, 0, 0, 0.65);
 }
 
 .blur {
   backdrop-filter: blur(1rem);
-  background-color: rgba(0, 0, 0, .65);
+  background-color: var(--bg-blur);
 }
 
 .bg-links {
-  color: #eeeeee;
   transition: 0.15s ease-out all;
   background-color: var(--bg-links);
 }
@@ -92,4 +92,8 @@
   to {
     filter: invert(1) grayscale(100);
   }
+}
+
+.pb-6 {
+  padding-bottom: 6rem !important;
 }
